@@ -6,7 +6,51 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body><form action="submit.php" method="post">
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name" placeholder="Name" required><br>
+	
+<label for="email">Email</label>
+	<input type="Email" id="email" name="email" placeholder="Email" required>
+<br>
+	<label>Gender</label>
+	<input type="Radio" id="gender_m" name="gender" required>
+
+	<label for="gender_m">Male</label>
+	<input type="Radio" id="gender_f" name="gender" required>
+<label for="gender_f">Female</label>
+	<br>
+	<label for="cars">Car Brands</label>
+	<Select id="cars" name="caars" required>
+		            <option value="" disabled selected>--Please choose an option--</option>
+<option value="Toyota">Toyota</option>
+		<option value="Ford">Ford</option>
+		<option value="Honda">Honda</option>
+	</Select><br>
+	
+
+
+<label for="age">Age</label>
+	<input type="Number" id="age" name="age" placeholder="Age" required>
+<br><br>
+	
+	<label for="dob">DOB</label>
+	<input type="Date" id="dob" name="dob"  required><br><br>
+	<label for="tel">Phone Number</label>
+	<input type="Tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" ><br><br>
+	
+<label for="password">Password</label>
+	<input type="Password" id="password" name="Password" placeholder="Password" required>
+<br><br>
+
+	<label for="tos">I agree to the TOS</label>
+	<input type="Checkbox" id="tos" required>
+<br><br>
+
+<button>Submit</button>
+
+	
+</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
